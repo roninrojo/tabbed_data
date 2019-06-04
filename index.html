@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabbed Data</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/eb95b05dc4.js"></script>
+</head>
+
+<body>
+
+<div class="tabs">
+
+    <input checked="checked" id="tab1" type="radio" name="tab" />
+    <input id="tab2" type="radio" name="tab" />
+    <input id="tab3" type="radio" name="tab" />
+    <input id="tab4" type="radio" name="tab" />
+    <input id="tab5" type="radio" name="tab" />
+
+    <section>
+        <div id="user" class="tabs__section tab1">
+            <img class="thumbnail" src="" alt="">
+            <span class="name-first data data--name"></span><span class="name-last data data--name"></span>
+        </div>
+        <div id="email" class="tabs__section tab2">
+            <span class="email data"></span>
+        </div>
+        <div id="dob" class="tabs__section tab3">
+            <span class="dob data"></span>
+        </div>
+        <div id="phone" class="tabs__section tab4">
+            <span class="phone data"></span>
+        </div>
+        <div id="location" class="tabs__section tab5">
+            <span class="location-city data"></span>
+            <span class="location-street data"></span>
+            <span class="location-postcode data"></span>
+        </div>
+    </section>
+
+    <nav class="tabs__navigation">
+        <ul class="tabs__navigation-list">
+            <li class="tabs__navigation-list-item tab1">
+                <label for="tab1"><i class="fas fa-user"></i> User</label>
+            </li>
+            <li class="tabs__navigation-list-item tab2">
+                <label for="tab2"><i class="fas fa-envelope"></i> Email</label>
+            </li>
+            <li class="tabs__navigation-list-item tab3">
+                <label for="tab3"><i class="fas fa-calendar"></i> Dob</label>
+            </li>
+            <li class="tabs__navigation-list-item tab4">
+                <label for="tab4"><i class="fas fa-phone"></i> Phone</label>
+            </li>
+            <li class="tabs__navigation-list-item tab5">
+                <label for="tab5"><i class="fas fa-map"></i> Location</label>
+            </li>
+        </ul>
+    </nav>
+
+</div>
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

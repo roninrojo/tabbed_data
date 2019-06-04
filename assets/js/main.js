@@ -26,7 +26,7 @@ $(document).ready(function () {
             var date = new Date(date_parse);
             var formatted_date =  (date.getMonth() + 1) + "-" + date.getDate() + "-" + date.getFullYear();
 		
-		    $('.dob').text(formatted_date);
+            $('.dob').text(formatted_date);
 		
             var phone = data.results[0].cell;
             $('.phone').text(phone);

@@ -22,7 +22,11 @@ $(document).ready(function () {
             $('.email').text(email);
 		
             var dob = data.results[0].dob.date;
-            $('.dob').text(dob);
+            var date_parse = Date.parse(dob);
+            var date = new Date(date_parse);
+            var formatted_date =  (date.getMonth() + 1) + "-" + date.getDate() + "-" + date.getFullYear();
+		
+		    $('.dob').text(formatted_date);
 		
             var phone = data.results[0].cell;
             $('.phone').text(phone);
